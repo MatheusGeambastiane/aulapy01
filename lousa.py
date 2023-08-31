@@ -1,6 +1,4 @@
-1
-2.5
-True
-False
-"Matheus"
-'Matheus'
+nome = "Caique"
+idade = '20'
+
+print("Olá meu nome " + nome + " e tenho " + idade + " anos")
