@@ -18,6 +18,7 @@ n2 = int(input('Digite o sua 2 nota: '))
 # print(tipo_nome)
 soma = n1 + n2 
 
+
 print(f" O nome é: {nome} {sobrenome} a primeira nota é {n1} e a segunda é {n2} a minha nota geral é {soma}")
 
 
