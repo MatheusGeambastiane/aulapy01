@@ -1,0 +1,32 @@
+Atividade:
+    ✔ Criar uma tupla com 5 dados @done(23-09-05 17:45)
+    ✔ Alterar a tupla pra lista @done(23-09-05 17:47)
+    ✔ Insira 2 dados extras a essa lista @done(23-09-05 17:48)
+    ✔ Remova o primeiro dado da lista @done(23-09-05 17:52)
+    ✔ Remova o último dado da lista @done(23-09-05 17:54)
+
+    ✔     Faça um print com o primeiro dado da lista @done(23-09-05 17:55)
+    ✔     Crie um dicionário com os seguintes dados: @done(23-09-05 17:58)
+    ✔     Imprima somente o valor contido na chave Nome do dicionário @done(23-09-05 17:58)
+
+    ✔ Faça um print com a quantidade de dados da lista @done(23-09-05 17:57)
+
+
+
+    ☐ 
+
+
+    
+    
+    bullet
+    Crie um dicionário com os seguintes dados:
+    Nome, Idade, Profissão
+    
+        
+    bullet
+    Imprima somente o valor contido na chave Nome do dicionário
+    
+    
+
+
+
