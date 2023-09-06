@@ -1,0 +1,4 @@
+Atividade:
+    ✔ Se for pelo menos 250 imprimirá 10% @done(23-09-05 19:23)
+    ✔ Se for pelo menos 500 imprimirá 30% @done(23-09-05 19:23)
+    ☐ Se for abaixo de 250 imprimirá "falta pouco"
