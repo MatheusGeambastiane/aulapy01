@@ -5,5 +5,5 @@ def escolha_de_time(matricula):
     else:
         return "VOCÊ ESTÁ NO TIME AMARELO"
 
-aluno = escolha_de_time(22)
-print(aluno)
+# aluno = escolha_de_time(22)
+# print(aluno)
