@@ -1,11 +1,16 @@
-import pandas as pd
+import requests
 
-data = {
-    'Nome': ['João', 'Marta', 'Ary', 'Matheus', 'Michele'],
-    'Idade': [51, 37, 23, 24,33],
-   
+squad = {
+    "matheus": "40140260",
+    "michelle": "40155250",
+    "viviane": "40155810"
 }
 
-df = pd.DataFrame(data)
+for nome, cep in squad.items():
+    # print(f'{nome} e {cep}')
 
-print(df)
+    response = requests.get(f"https://viacep.com.br/ws/{cep}/json/")
+
+    data = response.json()
+    cidade = data['localidade']
+    print(f'{nome} mora em {cidade}')
