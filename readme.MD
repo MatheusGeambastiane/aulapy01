@@ -25,3 +25,14 @@ python -m venv nomedoambiente
 ```
 
 Para o Windows, se tiver problema de policy, executar o comando no powershell como administrador:
+```bash
+Set-ExecutionPolicy RemoteSigned -Scope Process
+```
+ou 
+```bash
+Set-ExecutionPolicy Unrestricted -Force
+```
+
+# Para executar o ambiente virtual:
+
+

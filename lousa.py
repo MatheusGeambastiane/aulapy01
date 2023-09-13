@@ -1,9 +1,10 @@
+import pandas as pd
 
-def escolha_de_time(matricula):
-    if matricula % 2 == 0:
-        return "VOCÊ ESTÁ NO TIME AZUL"
-    else:
-        return "VOCÊ ESTÁ NO TIME AMARELO"
+data = {
+    'Nome': ['João', "Marta", "Ary", "Matheus", "Michelle"],
+    'Idade': [51, 37, 23,24, 33],
+}
 
-aluno = escolha_de_time(22)
-print(aluno)
+df = pd.DataFrame(data)
+
+print(df[df['Idade']>30])
