@@ -19,10 +19,10 @@ def gerar_massa(quantidade):
 
     for i in range(quantidade):
         data = {
-            "Nome": remover_apelido(faker.name()),
+            "Nome": remover_apelido(faker.name()), # A função remover apelido para tirar o Sr. Sra. Srta.
             "cidade": faker.city(),
             'bio': faker.text(),
-            'idade': random.randint(18, 90) # Gerar números aleatorios com o random
+            'idade': random.randint(18, 90) # Gerar números aleatorios com o random, para idade
         }
         personas.append(data)
 
