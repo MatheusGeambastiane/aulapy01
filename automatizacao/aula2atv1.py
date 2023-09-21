@@ -1,5 +1,6 @@
 from selenium.webdriver import Firefox
 from selenium.webdriver.common.by import By
+from time import sleep
 
 navegador = Firefox()
 
@@ -22,3 +23,5 @@ for checkbox in checkboxes:
 
     checkbox.click()
 
+sleep(5)
+navegador.quit()
