@@ -4,6 +4,6 @@ aulapyenv/
 __pycache__
 
 .vscode
-
+envaula
 pvenv
 geckodriver.log
