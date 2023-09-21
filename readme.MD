@@ -35,4 +35,38 @@ Set-ExecutionPolicy Unrestricted -Force
 
 # Para executar o ambiente virtual:
 
+-- Windows:
+```bash
+nomedoambiente\Scripts\activate
+```
+Linux/MacOs
+```bash
+nomedoambiente/bin/activate
+```
+
+# Instalar bibliotecas:
+Para isso usamos o pip install seguido do nome da lib, não esqueça de pesquisar a biblioteca no google
+
+```bash
+pip install nomedabiblioteca
+```
+
+# Desinstalar bibliotecas:
+Não execute, a não ser que você queira desinstalar as bibliotecas
+```bash
+pip uninstall nomedabiblioteca
+```
+
+# Salvar todos os nomes das dependências do projeto em um arquivo
+
+```bash
+pip freeze > requirements.txt
+```
+
+Para instalar todas as bibliotecas usadas no projeto, em caso de abrir em outro computador ou mandar pra outra pessoa, deverá ser executado o código abaixo:
+
+```bash
+pip install -r requirements.txt
+```
+Assim, a tag -r antes do nome requirements.txt significa que ele lerá todas as linhas dentro desse arquivo de texto e vai instalar todas as dependências nas versões exatas que estão lá.
 
