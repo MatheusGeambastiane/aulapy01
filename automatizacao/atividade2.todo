@@ -1,0 +1,10 @@
+Funcionalidade:
+    # Pesquisar o instituto no goolgle e mandar mensagem
+    ✔ Abrir navegador @done(23-09-21 19:14)
+    ✔ Entrar na página do google @done(23-09-21 19:15)
+    ✔ Clicar no campo pesquisa, escrever o texto e fazer pesquisa @done(23-09-21 19:23)
+    ☐ identificar a resposta do resultado
+    ☐ Entrar no site
+    ☐ Clicar nos campos do formulário
+    ☐ Inserir informações
+    ☐ Mandar
