@@ -1,2 +1,9 @@
 aulapyenv
 aulapyenv/
+
+__pycache__
+
+.vscode
+
+pvenv
+geckodriver.log
