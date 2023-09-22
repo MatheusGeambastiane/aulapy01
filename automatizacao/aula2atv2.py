@@ -8,19 +8,41 @@ from time import sleep
 #ABRIR NAVEGADOR
 navegador = Firefox()
 
-url = "https://www.jogajuntoinstituto.org/"
+url = "https://google.com"
 
 #ACESSAR SITE
 navegador.get(url)
 
 # IDENTIFICAR A BARRA DE PESQUISA
-# barra_de_pesquisa = navegador.find_element(By.NAME, "q")
+barra_de_pesquisa = navegador.find_element(By.NAME, "q")
 #REALIZAR A PESQUISA
-# barra_de_pesquisa.click()
-# barra_de_pesquisa.send_keys("Instituto Joga Junto")
-# barra_de_pesquisa.send_keys(Keys.ENTER)
+barra_de_pesquisa.click()
+barra_de_pesquisa.send_keys("Instituto Joga Junto")
+barra_de_pesquisa.send_keys(Keys.ENTER)
 
+sleep(5)
+import ipdb;ipdb.sset_trace()
+resultados = navegador.find_elements(By.TAG_NAME, "h3")
 
+print(resultados)
+if resultados is not None:
+    check_result = False
+    while check_result == False:
+        try:
+            
+            for resultado in resultados:
+                texto = resultado.text 
+                if texto is None:
+                    print("não tem")
+                
+                if texto == 'Instituto Joga Junto':
+                    resultado.click()
+                    check_result = True
+        except Exception as e:
+            print(e)
+    
+sleep(5)
+# print(resultado)
 def verify_title(title):
     
     assert title in navegador.title
@@ -50,7 +72,7 @@ form_btn = navegador.find_element(By.XPATH, "/html/body/div[1]/div[2]/section[8]
 print(form_btn)
 
 form_btn.submit()
-
+# navegador.find_element(By.XPATH, '/html/body/div[5]/div/div[12]/div[1]/div[2]/div[2]/div/div/div[1]/div/div/div/div/div/div/div[1]/div/span/a')
 
 sleep(8)
 navegador.quit()
